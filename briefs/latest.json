@@ -1,6 +1,17 @@
 {
   "test": true,
   "date": "2026-10-30",
-  "status": "no_news",
-  "articles": []
+  "status": "news",
+  "articles": [
+    {
+      "importance": "测试",
+      "category": "连接",
+      "title": "飞书推送连接测试",
+      "summary": "这是一条测试消息，不代表真实新闻。",
+      "significance": "用于验证 GitHub Actions 能否向飞书发送富文本。",
+      "source": "系统测试",
+      "published_at": "测试",
+      "url": "https://github.com/qduningning-google/cc-market-news"
+    }
+  ]
 }
