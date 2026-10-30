@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""Render a market-news JSON record as Feishu rich text and send it."""
+"""Render a market-news JSON record as Feishu message cards and send it."""
+import html
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -11,12 +13,23 @@ from urllib.parse import urlparse
 LIMIT = 20 * 1024
 
 
-def node(text):
-    return {"tag": "text", "text": text}
+def escape_md(text):
+    return re.sub(r"([\\\\`*_\[\]])", r"\\\1", html.escape(text, quote=False))
 
 
-def payload(title, paragraphs):
-    return {"msg_type": "post", "content": {"post": {"zh_cn": {"title": title, "content": paragraphs}}}}
+def payload(title, elements):
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": "blue", "title": {"tag": "plain_text", "content": title}},
+            "elements": elements,
+        },
+    }
+
+
+def markdown(text):
+    return {"tag": "div", "text": {"tag": "lark_md", "content": text}}
 
 
 def encode(obj):
@@ -37,9 +50,9 @@ def render(record):
     date = record.get("date")
     if not isinstance(date, str) or len(date) != 10:
         raise ValueError("Invalid date")
-    title = "中国资本市场新闻｜" + date
+    title = "中国资本市场简报  |  " + date
     groups = []
-    for article in articles:
+    for index, article in enumerate(articles, 1):
         if not isinstance(article, dict):
             raise ValueError("Article must be an object")
         keys = ("importance", "category", "title", "summary", "significance", "source", "published_at", "url")
@@ -48,22 +61,25 @@ def render(record):
         url = urlparse(article["url"])
         if url.scheme != "https" or not url.netloc:
             raise ValueError("Article link must be HTTPS")
-        paragraphs = [
-            [node("【%s·%s】%s" % (article["importance"], article["category"], article["title"]))],
-            [node("概要：" + article["summary"])],
-            [node("关注原因：" + article["significance"])],
-            [node("来源：%s｜%s｜" % (article["source"], article["published_at"])),
-             {"tag": "a", "text": "阅读原文", "href": article["url"]}],
+        group = [
+            markdown("**%02d  %s**\n%s  ·  %s" % (index, escape_md(article["title"]), escape_md(article["importance"]), escape_md(article["category"]))),
+            markdown("**要闻**  " + escape_md(article["summary"]) + "\n\n**关注**  " + escape_md(article["significance"])),
+            {"tag": "note", "elements": [{"tag": "plain_text", "content": article["source"] + "  ·  " + article["published_at"]}]},
+            {"tag": "action", "actions": [{"tag": "button", "text": {"tag": "plain_text", "content": "阅读原文 ↗"}, "url": article["url"], "type": "default"}]},
         ]
-        if len(encode(payload(title, paragraphs))) > LIMIT:
+        if len(encode(payload(title, group))) > LIMIT:
             raise ValueError("One article exceeds Feishu's request limit")
-        groups.append(paragraphs)
-    messages, current = [], []
+        groups.append(group)
+    messages, current, count = [], [], 0
     for group in groups:
-        if len(encode(payload(title, current + group))) > LIMIT:
+        candidate = current + ([{"tag": "hr"}] if current else []) + group
+        if count == 5 or len(encode(payload(title, candidate))) > LIMIT:
             messages.append(payload(title, current))
             current = []
-        current.extend(group)
+            count = 0
+            candidate = group
+        current = candidate
+        count += 1
     if current:
         messages.append(payload(title, current))
     return messages
