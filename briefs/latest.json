@@ -4,14 +4,54 @@
   "status": "news",
   "articles": [
     {
-      "importance": "测试",
-      "category": "连接",
-      "title": "飞书推送连接测试",
-      "summary": "这是一条测试消息，不代表真实新闻。",
-      "significance": "用于验证 GitHub Actions 能否向飞书发送富文本。",
-      "source": "系统测试",
-      "published_at": "测试",
-      "url": "https://github.com/qduningning-google/cc-market-news"
+      "importance": "重大",
+      "category": "一周测试·国家队",
+      "title": "国家队常交易的ETF录得大额资金流入",
+      "summary": "彭博统计，上周9只国家队常交易ETF合计净流入1287亿元，为2025年4月以来最高。ETF净流入不等于已证实全由国家队买入；报道只显示部分内容。",
+      "significance": "资金流向是观察稳市力度的重要线索，仍需后续披露确认买方和持续性。",
+      "source": "彭博社（Bloomberg Law）",
+      "published_at": "10月26日 12:14 北京时间",
+      "url": "https://news.bloomberglaw.com/international-trade/china-national-team-etfs-draw-most-inflows-since-trade-war-rout"
+    },
+    {
+      "importance": "重大",
+      "category": "一周测试·政策",
+      "title": "央行将每个工作日开展隔夜逆回购",
+      "summary": "路透报道，央行宣布11月2日起每日开展隔夜逆回购，当前操作利率为1.25%；7天逆回购主要在税期和月末开展。",
+      "significance": "此举调整短端利率调控框架，可能影响市场流动性和债券定价；不能简单等同于降息。",
+      "source": "路透社",
+      "published_at": "10月30日 17:30 北京时间",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-conduct-overnight-reserve-repos-every-working-day-november-2-2026-10-30/"
+    },
+    {
+      "importance": "重要",
+      "category": "一周测试·市场与外资",
+      "title": "科创50大幅回撤，海外机构对中国科技股看法分化",
+      "summary": "路透称科创50指数较高点下跌约40%。汇丰研究称亚洲基金总体仍超配中国，但过去3个月在卖出；高盛保留部分中国AI股推荐，法巴认为谨慎选股可能有机会。",
+      "significance": "实际卖出、相对超配和机构推荐可以同时存在，不应简单概括为外资一致撤离或看好。",
+      "source": "路透社",
+      "published_at": "10月26日 20:02 北京时间，10月27日更新",
+      "url": "https://www.reuters.com/world/china/china-ai-bubble-has-already-burst-2026-10-26/"
+    },
+    {
+      "importance": "重要",
+      "category": "一周测试·市场",
+      "title": "利润压力使中国股市大幅回撤难以消化",
+      "summary": "彭博可见摘要称，疲弱经济侵蚀企业利润，同时投资者对强力刺激政策的预期降温；按其统计，中国股市总市值较5月高点减少3.5万亿美元。全文不可访问，以上仅依据页面摘要。",
+      "significance": "企业盈利和政策预期是判断稳市资金能否带来持续修复的关键变量。",
+      "source": "彭博社（页面摘要）",
+      "published_at": "10月25日（北京时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-25/sinking-profits-turn-china-s-3-5-trillion-stock-rout-into-trap"
+    },
+    {
+      "importance": "重要",
+      "category": "一周测试·A股港股",
+      "title": "彭博：稳市行动下A股相对港股的溢价扩大",
+      "summary": "彭博报道摘要称，内地稳市努力推动同一公司A股和H股的估值差扩大至近17个月高位。仅可读取第三方摘要，未读取原文全文。",
+      "significance": "同一公司两地股价差异可能反映资金结构和政策预期差，不能单凭价差确定买卖原因。",
+      "source": "彭博社（第三方摘要）",
+      "published_at": "10月27日发布",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-27/china-stock-premium-over-hong-kong-widens-on-state-intervention"
     }
   ]
 }
