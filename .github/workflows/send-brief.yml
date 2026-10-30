@@ -1,0 +1,20 @@
+name: Send market brief to Feishu
+on:
+  push:
+    branches: [main]
+    paths: [briefs/latest.json]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: market-brief
+  cancel-in-progress: false
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send the news brief
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: python3 send_brief.py
