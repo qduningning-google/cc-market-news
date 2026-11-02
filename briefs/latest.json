@@ -1,16 +1,26 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "status": "news",
   "articles": [
     {
+      "importance": "重大",
+      "category": "监管政策",
+      "title": "据报道央行和证监会将与金融机构讨论稳市工具",
+      "summary": "彭博援引中国媒体报道，央行和证监会将于11月2日讨论支持资本市场的工具；据相关报道，监管部门还将与银行研究优化股票回购增持再贷款。彭博原文不可访问，概要依据可见摘要及国内媒体报道。",
+      "significance": "会议可能影响回购、增持融资支持的执行方式；目前属于媒体报道，具体决定、额度和政策细节尚待官方确认。",
+      "source": "彭博社（原文受限；援引国内媒体）",
+      "published_at": "11月1日18:08（北京时间，报道索引）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-01/china-to-convene-meeting-on-supporting-stock-market-reports-say"
+    },
+    {
       "importance": "重要",
-      "category": "宏观与市场",
-      "title": "中国10月制造业和非制造业PMI均重回收缩区间",
-      "summary": "国家统计局数据显示，制造业PMI由9月50.1降至49.3，低于路透调查预期50.0；非制造业PMI由50.2降至49.7。彭博调查预期为49.9；彭博原文无法读取，依据The Edge Singapore转载。彭博原文：https://www.bloomberg.com/news/articles/2026-10-31/china-factory-activity-manufacturing-purchasing-managers-index-services",
-      "significance": "需求偏弱可能影响企业盈利与市场对政策支持的预期；这是分析，不表示已经出台新刺激政策。",
-      "source": "路透社；彭博社（The Edge Singapore转载）",
-      "published_at": "10月31日：路透09:48；彭博转载10:06（北京时间）",
-      "url": "https://www.reuters.com/world/asia-pacific/chinas-october-factory-activity-contracts-fastest-pace-3-months-pmi-survey-shows-2026-10-31/"
+      "category": "上市公司",
+      "title": "比亚迪10月销量增长11%，海外销量翻倍",
+      "summary": "路透根据公司披露计算，比亚迪10月汽车销量同比增长11%至490,168辆，增速低于9月的17%；海外销量同比增长102.8%至170,194辆。",
+      "significance": "出口增长正在支撑这家A股、港股上市车企的销量；国内竞争与海外贸易限制仍是观察其盈利和估值的重要变量。",
+      "source": "路透社",
+      "published_at": "11月1日19:38（北京时间）",
+      "url": "https://www.reuters.com/business/autos-transportation/chinas-byd-extends-sales-growth-streak-strong-exports-2026-11-01/"
     }
   ]
 }
