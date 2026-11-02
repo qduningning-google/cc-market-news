@@ -1,26 +1,36 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "status": "news",
   "articles": [
     {
       "importance": "重大",
-      "category": "监管政策",
-      "title": "据报道央行和证监会将与金融机构讨论稳市工具",
-      "summary": "彭博援引中国媒体报道，央行和证监会将于11月2日讨论支持资本市场的工具；据相关报道，监管部门还将与银行研究优化股票回购增持再贷款。彭博原文不可访问，概要依据可见摘要及国内媒体报道。",
-      "significance": "会议可能影响回购、增持融资支持的执行方式；目前属于媒体报道，具体决定、额度和政策细节尚待官方确认。",
-      "source": "彭博社（原文受限；援引国内媒体）",
-      "published_at": "11月1日18:08（北京时间，报道索引）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-01/china-to-convene-meeting-on-supporting-stock-market-reports-say"
+      "category": "监管政策与国家队资金",
+      "title": "央行强化股票支持工具，回购增持再贷款利率降至1%",
+      "summary": "央行将股票回购增持再贷款由阶段性安排转为长期机制，利率由1.25%降至1%；31家券商和基金公司申请互换额度超1000亿元，11月3日招标，申请额不等于已投放或已买股。证监会鼓励权重股和科技龙头回购、部分新ETF加快建仓，放宽融资融券规则仍在研究。彭博另援引财联社称，一家大型国有银行计划向两家国家队相关资管机构合计增加最多2000亿元授信，实际使用仍待确认。彭博稳市工具报道：https://www.bloomberg.com/news/articles/2026-11-02/china-to-boost-use-of-stock-support-tools-to-stabilize-market ；授信消息见彭博授权转载：https://www.theedgesingapore.com/news/china/chinese-stocks-report-regulator-market-support-meeting",
+      "significance": "支持工具的成本和持续性已明确改善，但互换额度、授信计划及研究中的规则调整均不能当作实际增量买盘或已生效的新规则。",
+      "source": "路透社；彭博社（稳市报道原文受限，依据The Edge Singapore转载；授信消息为转载并援引财联社）",
+      "published_at": "2026-11-02 17:14（路透）；17:37、22:12（彭博转载，北京时间）",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-taps-liquidity-tool-fund-share-purchases-2026-11-02/"
     },
     {
       "importance": "重要",
-      "category": "上市公司",
-      "title": "比亚迪10月销量增长11%，海外销量翻倍",
-      "summary": "路透根据公司披露计算，比亚迪10月汽车销量同比增长11%至490,168辆，增速低于9月的17%；海外销量同比增长102.8%至170,194辆。",
-      "significance": "出口增长正在支撑这家A股、港股上市车企的销量；国内竞争与海外贸易限制仍是观察其盈利和估值的重要变量。",
+      "category": "外资观点与流动性",
+      "title": "央行启用隔夜政策利率，外资机构对宽松效果看法不一",
+      "summary": "央行11月2日开展5410亿元隔夜逆回购，利率1.25%，并将政策利率锚转向隔夜利率；5410亿元为投放总量，并非净投放。澳新银行分析师认为对金融机构相当于定向降息15个基点；花旗认为是技术性调整，预计11月贷款市场报价利率不会跟随下调。",
+      "significance": "新的利率锚可能影响银行融资成本和债券收益率；上述为机构观点分歧，未显示外资实际增减仓。",
       "source": "路透社",
-      "published_at": "11月1日19:38（北京时间）",
-      "url": "https://www.reuters.com/business/autos-transportation/chinas-byd-extends-sales-growth-streak-strong-exports-2026-11-01/"
+      "published_at": "2026-11-02 09:39（北京时间）",
+      "url": "https://www.reuters.com/world/asia-pacific/china-cbank-injects-cash-shifts-overnight-rate-key-policy-lever-2026-11-02/"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·债券信用",
+      "title": "珠海华发信用担忧继续波及债券基金",
+      "summary": "路透援引上周报道，珠海华发未能偿付两项到期信托产品，并正寻求部分银行贷款展期；11月2日早盘债券ETF继续承压，一只30年期国债基金跌约0.3%。基金管理人iFund认为流动性压力已传导至债券基金，部分基金被迫折价交易。",
+      "significance": "信用事件若持续扩散，可能加剧债基赎回和流动性压力；基金经理的传导判断属于机构观点。",
+      "source": "路透社（Business Recorder转载）",
+      "published_at": "2026-11-02 14:14（北京时间，转载更新时间）",
+      "url": "https://www.brecorder.com/news/40447016/china-stocks-rise-on-reports-of-regulatory-support-huafa-concerns-weigh-on-bonds"
     }
   ]
 }
