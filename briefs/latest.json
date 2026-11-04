@@ -1,36 +1,46 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "status": "news",
   "articles": [
     {
       "importance": "重大",
-      "category": "监管政策与国家队资金",
-      "title": "央行强化股票支持工具，回购增持再贷款利率降至1%",
-      "summary": "央行将股票回购增持再贷款由阶段性安排转为长期机制，利率由1.25%降至1%；31家券商和基金公司申请互换额度超1000亿元，11月3日招标，申请额不等于已投放或已买股。证监会鼓励权重股和科技龙头回购、部分新ETF加快建仓，放宽融资融券规则仍在研究。彭博另援引财联社称，一家大型国有银行计划向两家国家队相关资管机构合计增加最多2000亿元授信，实际使用仍待确认。彭博稳市工具报道：https://www.bloomberg.com/news/articles/2026-11-02/china-to-boost-use-of-stock-support-tools-to-stabilize-market ；授信消息见彭博授权转载：https://www.theedgesingapore.com/news/china/chinese-stocks-report-regulator-market-support-meeting",
-      "significance": "支持工具的成本和持续性已明确改善，但互换额度、授信计划及研究中的规则调整均不能当作实际增量买盘或已生效的新规则。",
-      "source": "路透社；彭博社（稳市报道原文受限，依据The Edge Singapore转载；授信消息为转载并援引财联社）",
-      "published_at": "2026-11-02 17:14（路透）；17:37、22:12（彭博转载，北京时间）",
-      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-taps-liquidity-tool-fund-share-purchases-2026-11-02/"
+      "category": "监管政策·IPO",
+      "title": "据报道监管部门窗口指导投行暂缓IPO及大股东减持",
+      "summary": "路透援引《金融时报》及三名知情人士称，证监会近日与投行开会并给予非正式窗口指导，要求暂缓IPO及大股东大额出售股份，直至市场恢复。路透未能独立核实，监管机构当时未回复置评请求。",
+      "significance": "若得到证实，将直接影响新股供给和股东退出安排；目前属于媒体引述的未证实消息。",
+      "source": "路透社（援引《金融时报》知情人士报道）",
+      "published_at": "2026-11-03 14:59（北京时间）",
+      "url": "https://www.reuters.com/world/china/china-regulator-tells-banks-pause-ipos-ft-reports-2026-11-03/"
     },
     {
       "importance": "重要",
-      "category": "外资观点与流动性",
-      "title": "央行启用隔夜政策利率，外资机构对宽松效果看法不一",
-      "summary": "央行11月2日开展5410亿元隔夜逆回购，利率1.25%，并将政策利率锚转向隔夜利率；5410亿元为投放总量，并非净投放。澳新银行分析师认为对金融机构相当于定向降息15个基点；花旗认为是技术性调整，预计11月贷款市场报价利率不会跟随下调。",
-      "significance": "新的利率锚可能影响银行融资成本和债券收益率；上述为机构观点分歧，未显示外资实际增减仓。",
+      "category": "监管政策·人民币",
+      "title": "央行宣布将外汇存款准备金率从4%上调至6%",
+      "summary": "央行宣布11月15日起将金融机构外汇存款准备金率提高2个百分点。路透按官方外汇存款数据估算，此举将额外冻结约240亿美元流动性；在岸人民币盘中一度走弱0.37%。",
+      "significance": "措施影响外汇流动性和人民币资产定价。三菱日联分析师认为意在缓和单边升值预期；澳新认为象征意义更大，不足以消除外汇供过于求。",
       "source": "路透社",
-      "published_at": "2026-11-02 09:39（北京时间）",
-      "url": "https://www.reuters.com/world/asia-pacific/china-cbank-injects-cash-shifts-overnight-rate-key-policy-lever-2026-11-02/"
+      "published_at": "2026-11-03 08:55（北京时间；报道后续更新）",
+      "url": "https://www.reuters.com/world/asia-pacific/china-raise-forex-deposit-reserve-ratio-6-starting-november-15-2026-11-03/"
     },
     {
       "importance": "重要",
-      "category": "其他市场要闻·债券信用",
-      "title": "珠海华发信用担忧继续波及债券基金",
-      "summary": "路透援引上周报道，珠海华发未能偿付两项到期信托产品，并正寻求部分银行贷款展期；11月2日早盘债券ETF继续承压，一只30年期国债基金跌约0.3%。基金管理人iFund认为流动性压力已传导至债券基金，部分基金被迫折价交易。",
-      "significance": "信用事件若持续扩散，可能加剧债基赎回和流动性压力；基金经理的传导判断属于机构观点。",
-      "source": "路透社（Business Recorder转载）",
-      "published_at": "2026-11-02 14:14（北京时间，转载更新时间）",
-      "url": "https://www.brecorder.com/news/40447016/china-stocks-rise-on-reports-of-regulatory-support-huafa-concerns-weigh-on-bonds"
+      "category": "国家队资金与市场",
+      "title": "国家队常交易ETF成交放大，股市对稳市工具反应谨慎",
+      "summary": "彭博称11月3日国家队偏好的ETF成交额达到1200亿元，为1月底以来最高；科创50指数下跌近4%，沪深300收跌0.2%。成交额包含买卖双方，不能证明是国家队净买入或确认买方身份。",
+      "significance": "放量可作为观察市场支持力度的线索，但市场下跌显示投资者对支持效果仍有疑虑；应结合后续份额和持仓数据判断。",
+      "source": "彭博社（The Edge Malaysia转载；彭博原文未能读取）",
+      "published_at": "2026-11-03 16:04（北京时间，转载时间）",
+      "url": "https://theedgemalaysia.com/node/824368"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·信用风险",
+      "title": "华发债务压力传导信用市场，一项信托产品据报已偿付",
+      "summary": "彭博称，截至11月2日的两个交易日，中国基准公司债平均收益率上升10.3个基点；华发有息负债约4130亿元，其2027年到期离岸人民币债券由约面值54%回升至63%。报道提到一项信托产品已获偿付、地产子公司偿付到期债券。",
+      "significance": "信用压力和部分偿付同时存在，仍需关注到期债务及其对国企信用风险定价的影响。",
+      "source": "彭博社（The Edge Malaysia转载；彭博原文未能读取）",
+      "published_at": "2026-11-03 13:55（北京时间，转载时间）",
+      "url": "https://theedgemalaysia.com/node/824335"
     }
   ]
 }
