@@ -1,46 +1,26 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "status": "news",
   "articles": [
     {
       "importance": "重大",
-      "category": "监管政策·IPO",
-      "title": "据报道监管部门窗口指导投行暂缓IPO及大股东减持",
-      "summary": "路透援引《金融时报》及三名知情人士称，证监会近日与投行开会并给予非正式窗口指导，要求暂缓IPO及大股东大额出售股份，直至市场恢复。路透未能独立核实，监管机构当时未回复置评请求。",
-      "significance": "若得到证实，将直接影响新股供给和股东退出安排；目前属于媒体引述的未证实消息。",
-      "source": "路透社（援引《金融时报》知情人士报道）",
-      "published_at": "2026-11-03 14:59（北京时间）",
-      "url": "https://www.reuters.com/world/china/china-regulator-tells-banks-pause-ipos-ft-reports-2026-11-03/"
-    },
-    {
-      "importance": "重要",
-      "category": "监管政策·人民币",
-      "title": "央行宣布将外汇存款准备金率从4%上调至6%",
-      "summary": "央行宣布11月15日起将金融机构外汇存款准备金率提高2个百分点。路透按官方外汇存款数据估算，此举将额外冻结约240亿美元流动性；在岸人民币盘中一度走弱0.37%。",
-      "significance": "措施影响外汇流动性和人民币资产定价。三菱日联分析师认为意在缓和单边升值预期；澳新认为象征意义更大，不足以消除外汇供过于求。",
+      "category": "监管政策·资金入市",
+      "title": "央行：银行申报股票回购增持再贷款额度超过2000亿元",
+      "summary": "央行11月4日称，银行本周申报股票回购增持再贷款额度超2000亿元；再贷款利率从1.25%下调至1%，当日生效，并要求银行加快发放贷款。申报额度不等于获批、贷款已发放或已买入股票。",
+      "significance": "这是上次宣布降息和机制常态化后的新增申报数据，可观察银行参与度；最终入市规模及企业实际增持意愿仍待确认。",
       "source": "路透社",
-      "published_at": "2026-11-03 08:55（北京时间；报道后续更新）",
-      "url": "https://www.reuters.com/world/asia-pacific/china-raise-forex-deposit-reserve-ratio-6-starting-november-15-2026-11-03/"
+      "published_at": "2026-11-04 09:29（北京时间，报道后续更新）",
+      "url": "https://www.reuters.com/world/asia-pacific/china-stock-re-lending-applications-hit-nearly-30-billion-2026-11-04/"
     },
     {
-      "importance": "重要",
-      "category": "国家队资金与市场",
-      "title": "国家队常交易ETF成交放大，股市对稳市工具反应谨慎",
-      "summary": "彭博称11月3日国家队偏好的ETF成交额达到1200亿元，为1月底以来最高；科创50指数下跌近4%，沪深300收跌0.2%。成交额包含买卖双方，不能证明是国家队净买入或确认买方身份。",
-      "significance": "放量可作为观察市场支持力度的线索，但市场下跌显示投资者对支持效果仍有疑虑；应结合后续份额和持仓数据判断。",
-      "source": "彭博社（The Edge Malaysia转载；彭博原文未能读取）",
-      "published_at": "2026-11-03 16:04（北京时间，转载时间）",
-      "url": "https://theedgemalaysia.com/node/824368"
-    },
-    {
-      "importance": "重要",
-      "category": "其他市场要闻·信用风险",
-      "title": "华发债务压力传导信用市场，一项信托产品据报已偿付",
-      "summary": "彭博称，截至11月2日的两个交易日，中国基准公司债平均收益率上升10.3个基点；华发有息负债约4130亿元，其2027年到期离岸人民币债券由约面值54%回升至63%。报道提到一项信托产品已获偿付、地产子公司偿付到期债券。",
-      "significance": "信用压力和部分偿付同时存在，仍需关注到期债务及其对国企信用风险定价的影响。",
-      "source": "彭博社（The Edge Malaysia转载；彭博原文未能读取）",
-      "published_at": "2026-11-03 13:55（北京时间，转载时间）",
-      "url": "https://theedgemalaysia.com/node/824335"
+      "importance": "重大",
+      "category": "国家队资金·实际资金流",
+      "title": "彭博：国家队偏好ETF单日净流入767亿元",
+      "summary": "彭博统计，11月3日国家队偏好的9只ETF合计净流入767亿元，为有记录以来第二高；净流入数据未披露全部投资者身份，不能认定全部来自国家队。长鑫存储董事长11月4日提议将回购规模提高至25亿至50亿元，仍是提议。",
+      "significance": "这是上次仅有ETF成交额后的新增净流入数据，有助判断资金进入相关ETF的力度；尚不能等同国家队确认增持金额。彭博原文受限，概要依据授权转载：https://www.livemint.com/market/china-boosts-market-defense-with-national-team-buying-buybacks-11793762762747.html",
+      "source": "彭博社（原文受限，依据Mint授权转载）",
+      "published_at": "2026-11-04 11:26（北京时间，Mint转载时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/china-boosts-market-defense-with-national-team-buying-buybacks"
     }
   ]
 }
