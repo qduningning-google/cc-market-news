@@ -1,26 +1,16 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "status": "news",
   "articles": [
     {
-      "importance": "重大",
-      "category": "监管政策·资金入市",
-      "title": "央行：银行申报股票回购增持再贷款额度超过2000亿元",
-      "summary": "央行11月4日称，银行本周申报股票回购增持再贷款额度超2000亿元；再贷款利率从1.25%下调至1%，当日生效，并要求银行加快发放贷款。申报额度不等于获批、贷款已发放或已买入股票。",
-      "significance": "这是上次宣布降息和机制常态化后的新增申报数据，可观察银行参与度；最终入市规模及企业实际增持意愿仍待确认。",
+      "importance": "重要",
+      "category": "市场要闻·新能源",
+      "title": "中国新能源股上涨，投资者押注美国政策变化",
+      "summary": "路透报道，11月5日早盘科创新能源指数上涨6.46%，阳光电源上涨7.45%，宁德时代上涨5.17%。分析师认为行情反映对美国中期选举后政策变化的预期，尚无具体新政策；美国对中国光伏产品及电网电池的关税仍分别为50%和25%。",
+      "significance": "新能源板块显著波动反映投资者对政策和出口前景的重新定价；杰富瑞提醒可再生能源支持不一定意味着对中国出口商开放市场。",
       "source": "路透社",
-      "published_at": "2026-11-04 09:29（北京时间，报道后续更新）",
-      "url": "https://www.reuters.com/world/asia-pacific/china-stock-re-lending-applications-hit-nearly-30-billion-2026-11-04/"
-    },
-    {
-      "importance": "重大",
-      "category": "国家队资金·实际资金流",
-      "title": "彭博：国家队偏好ETF单日净流入767亿元",
-      "summary": "彭博统计，11月3日国家队偏好的9只ETF合计净流入767亿元，为有记录以来第二高；净流入数据未披露全部投资者身份，不能认定全部来自国家队。长鑫存储董事长11月4日提议将回购规模提高至25亿至50亿元，仍是提议。",
-      "significance": "这是上次仅有ETF成交额后的新增净流入数据，有助判断资金进入相关ETF的力度；尚不能等同国家队确认增持金额。彭博原文受限，概要依据授权转载：https://www.livemint.com/market/china-boosts-market-defense-with-national-team-buying-buybacks-11793762762747.html",
-      "source": "彭博社（原文受限，依据Mint授权转载）",
-      "published_at": "2026-11-04 11:26（北京时间，Mint转载时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-04/china-boosts-market-defense-with-national-team-buying-buybacks"
+      "published_at": "2026-11-05 13:50（北京时间）",
+      "url": "https://www.reuters.com/business/energy/chinas-cleantech-stocks-jump-investors-bet-us-policy-shift-2026-11-05/"
     }
   ]
 }
