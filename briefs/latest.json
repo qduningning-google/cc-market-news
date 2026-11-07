@@ -1,16 +1,5 @@
 {
-  "date": "2026-11-07",
-  "status": "news",
-  "articles": [
-    {
-      "importance": "重要",
-      "category": "市场要闻·A股港股",
-      "title": "全球科技股抛售波及中国市场，沪深300结束12周连跌",
-      "summary": "路透报道，11月6日沪深300收跌1.4%、全周上涨1.7%，结束连续12周下跌；恒生指数当日跌1.3%、全周涨5.1%。科创50及人工智能指数盘中一度下跌约5.2%，中际旭创收跌9.2%。",
-      "significance": "美股AI估值担忧向A股及港股传导，市场对外部科技股风险仍敏感；机构认为国内支持措施有助稳定市场，但不足以完全隔绝外部冲击。",
-      "source": "路透社（Devdiscourse转载，未找到路透原文链接）",
-      "published_at": "2026-11-06 16:41（北京时间，转载时间）",
-      "url": "https://www.devdiscourse.com/article/international/4002597-china-hong-kong-stocks-tumble-as-global-tech-selloff-deepens"
-    }
-  ]
+  "date": "2026-11-08",
+  "status": "no_news",
+  "articles": []
 }
