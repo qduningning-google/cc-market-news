@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "status": "news",
   "articles": [
     {
       "importance": "重要",
-      "category": "市场要闻·新能源",
-      "title": "中国新能源股上涨，投资者押注美国政策变化",
-      "summary": "路透报道，11月5日早盘科创新能源指数上涨6.46%，阳光电源上涨7.45%，宁德时代上涨5.17%。分析师认为行情反映对美国中期选举后政策变化的预期，尚无具体新政策；美国对中国光伏产品及电网电池的关税仍分别为50%和25%。",
-      "significance": "新能源板块显著波动反映投资者对政策和出口前景的重新定价；杰富瑞提醒可再生能源支持不一定意味着对中国出口商开放市场。",
-      "source": "路透社",
-      "published_at": "2026-11-05 13:50（北京时间）",
-      "url": "https://www.reuters.com/business/energy/chinas-cleantech-stocks-jump-investors-bet-us-policy-shift-2026-11-05/"
+      "category": "市场要闻·A股港股",
+      "title": "全球科技股抛售波及中国市场，沪深300结束12周连跌",
+      "summary": "路透报道，11月6日沪深300收跌1.4%、全周上涨1.7%，结束连续12周下跌；恒生指数当日跌1.3%、全周涨5.1%。科创50及人工智能指数盘中一度下跌约5.2%，中际旭创收跌9.2%。",
+      "significance": "美股AI估值担忧向A股及港股传导，市场对外部科技股风险仍敏感；机构认为国内支持措施有助稳定市场，但不足以完全隔绝外部冲击。",
+      "source": "路透社（Devdiscourse转载，未找到路透原文链接）",
+      "published_at": "2026-11-06 16:41（北京时间，转载时间）",
+      "url": "https://www.devdiscourse.com/article/international/4002597-china-hong-kong-stocks-tumble-as-global-tech-selloff-deepens"
     }
   ]
 }
