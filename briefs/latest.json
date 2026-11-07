@@ -1,16 +1,5 @@
 {
-  "date": "2026-11-07",
-  "status": "news",
-  "articles": [
-    {
-      "importance": "重要",
-      "category": "市场要闻·A股港股",
-      "title": "全球科技股抛售波及中国市场，沪深300结束12周连跌",
-      "summary": "路透报道，11月6日沪深300收跌1.4%、全周上涨1.7%，结束连续12周下跌；恒生指数当日跌1.3%、全周涨5.1%。科创50及人工智能指数盘中一度下跌约5.2%，中际旭创收跌9.2%。",
-      "significance": "美股AI估值担忧向A股及港股传导，市场对外部科技股风险仍敏感；机构认为国内支持措施有助稳定市场，但不足以完全隔绝外部冲击。",
-      "source": "路透社（Devdiscourse转载，未找到路透原文链接）",
-      "published_at": "2026-11-06 16:41（北京时间，转载时间）",
-      "url": "https://www.devdiscourse.com/article/international/4002597-china-hong-kong-stocks-tumble-as-global-tech-selloff-deepens"
-    }
-  ]
+  "version": 2,
+  "edition": "2026-11-07-pm",
+  "content": "【链路实发测试】风险偏好待确认。中美经贸磋商机制继续运作，限制措施仍有分歧。周六主要市场休市，政策和地缘消息的价格影响待下个交易时段确认。\n\n**北京时间 11 月 7 日 08:00–20:00**\n\n1. **中美经贸沟通延续。** 新华社 08:01 报道，何立峰与贝森特、格里尔于前一晚通话，双方同意继续发挥经贸磋商机制作用。商务部 09:00 就美国制裁两家中国企业表态反对。沟通有助于管控分歧，贸易风险仍取决于后续措施。[新华社](https://www.xinhuanet.com/politics/leaders/20261107/ebbfb492652949189aee6a26a748bf1a/c.html) · [商务部](https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_0a686e2464da49a58a076d9eab42187f.html)\n2. **中国外储小幅增加。** 10:02 财联社报道，10 月末外储为 3.4052 万亿美元，较 9 月末增加 49 亿美元。黄金储备增 83 万盎司至 7,830 万盎司，连续第 24 个月增加。外储变化不能单独用来推断跨境资金流向。[财联社](https://www.cls.cn/detail/2528013) · [人民网](https://finance.people.com.cn/n1/2026/1107/c1004-40829675.html)\n3. **关注霍尔木兹海峡航运。** 19:10 财联社援引央视新闻报道，伊朗海军称一艘油轮在海峡东部触雷起火。是否影响更广泛的航运尚待核实，下个交易时段关注油价和航运动态。[财联社](https://www.cls.cn/detail/2528113)\n\n**行情与下一交易时段**\n\n- A 股、港股周六休市。上个交易日沪深 300 收 4,054.28，跌约 1.44%，恒指收 24,481.86。[沪深 300](https://asharehub.com/zh/docs/indices) · [恒指](https://finance.yahoo.com/quote/%5EHSI/)\n- 窗口外参考。美股周五收盘标普 500 涨 0.3%，纳指涨 1.1%。北京时间 11 月 7 日 06:00，标普 500 期货报 7,402，美元指数约 102.28。04:20 美债 10 年期收益率约 4.86%。窗口内无有效现货金报价，COMEX 黄金期货 06:00 约报 4,074.90 美元/盎司。[美股收盘](https://apnews.com/article/806f71d95105bc7efbc760b194dd8cad) · [标普期货](https://finance.yahoo.com/quote/ES%3DF/) · [美元指数](https://finance.yahoo.com/quote/DX-Y.NYB/) · [美债收益率](https://finance.yahoo.com/quote/%5ETNX/) · [黄金期货](https://finance.yahoo.com/quote/GC%3DF/)\n- 中国方面，外储和经贸消息对增长预期的影响仍待数据验证。美国方面，隔夜强非农支撑增长预期，利率路径仍看后续通胀数据。若油价、美元与收益率同步走高，关注股指期货是否承压，以及黄金避险需求能否抵消利率压力。[美国劳工统计局](https://www.bls.gov/news.release/archives/empsit_11062026.htm)"
 }
