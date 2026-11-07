@@ -4,13 +4,27 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, time, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from market_brief import CN, collect, edition, timestamp
 
 MAX_ITEMS = 800
 MAX_BODY = 200
+MAX_RECAP_ITEMS = 12
+MAX_RECAP_BODY = 450
+MARKET_SCOPE = re.compile(r"A股|沪深|两市|三市|全市场|港股|恒生|恒指|美股|标普|纳指|纳斯达克|道指|上证|沪指|深证|深成指|创业板|科创50")
+RECAP_PATTERNS = {
+    "turnover": re.compile(r"成交(?:量|额|总额|金额)?[^，。；]{0,18}\d"),
+    "breadth": re.compile(
+        r"(?:上涨|下跌|涨跌)(?:个股|股票|家数)[^，。；]{0,18}\d"
+        r"|(?:上涨|下跌|收涨|收跌)\s*(?:超|逾|约|达|为)?\s*\d[\d,.]*\s*(?:家|只)"
+        r"|\d[\d,.]*\s*(?:多|余)?\s*(?:家|只|股)(?:个股|股票|成分股)?\s*(?:上涨|下跌|收涨|收跌|飘红)"
+    ),
+    "indices": re.compile(r"(?:沪深300|上证|沪指|深成指|深证成指|创业板|科创50|恒指|恒生|标普|纳指|纳斯达克|道指|道琼斯|罗素2000)[^，。；]{0,25}(?:涨|跌|高开|低开|持平|收平|收报|报\s*\d)"),
+    "stocks": re.compile(r"(?:涨停|跌停|[A-Za-z\u4e00-\u9fff](?:收涨|收跌|上涨|下跌|大涨|大跌|涨|跌)(?:超|逾|近)?\s*\d+(?:\.\d+)?\s*[%％])"),
+}
+CLOSE_RECAP = re.compile(r"收盘|收评|收市|收涨|收跌")
 
 
 def request_window(request, now=None):
@@ -31,6 +45,28 @@ def request_window(request, now=None):
     return end
 
 
+def flash_record(item, max_body=MAX_BODY):
+    return {"source": item.source, "published_at": item.published.isoformat(),
+            "title": item.title, "excerpt": item.body[:max_body],
+            "url": item.url or None, "importance": item.rank}
+
+
+def market_recaps(items):
+    """Reserve candidate flashes for each market statistic before the general cap."""
+    ordered = sorted(items, key=lambda item: (bool(CLOSE_RECAP.search(item.title)),
+                                              item.rank, item.published), reverse=True)
+    recaps = {kind: [] for kind in RECAP_PATTERNS}
+    for item in ordered:
+        excerpt = f"{item.title} {item.body[:MAX_RECAP_BODY]}"
+        for kind, pattern in RECAP_PATTERNS.items():
+            if len(recaps[kind]) >= MAX_RECAP_ITEMS or not pattern.search(excerpt):
+                continue
+            if kind == "turnover" and not MARKET_SCOPE.search(excerpt):
+                continue
+            recaps[kind].append(flash_record(item, MAX_RECAP_BODY))
+    return recaps
+
+
 def build_record(request, key, now=None):
     end = request_window(request, now)
     if not key:
@@ -44,9 +80,7 @@ def build_record(request, key, now=None):
             unique[fingerprint] = item
     all_items = sorted(unique.values(), key=lambda item: (item.rank, item.published), reverse=True)
     selected = all_items[:MAX_ITEMS]
-    records = [{"source": item.source, "published_at": item.published.isoformat(),
-                "title": item.title, "excerpt": item.body[:MAX_BODY],
-                "url": item.url or None, "importance": item.rank} for item in selected]
+    records = [flash_record(item) for item in selected]
     quote_records = {name: {"value": item.value, "at": item.at.isoformat(),
                              "base": item.base, "url": item.url}
                      for name, item in quotes.items()}
@@ -57,7 +91,7 @@ def build_record(request, key, now=None):
             "window_end": end.isoformat(), "collected_at": datetime.now(CN).isoformat(),
             "status": "ok" if successful else "error", "successful_news_queries": successful,
             "warnings": list(dict.fromkeys(warnings)), "news_total": len(all_items),
-            "news": records, "quotes": quote_records,
+            "news": records, "market_recaps": market_recaps(all_items), "quotes": quote_records,
             "trade_days": [day.isoformat() for day in calendar]}
 
 

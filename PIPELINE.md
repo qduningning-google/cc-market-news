@@ -8,4 +8,6 @@ ChatGPT 定时任务是分析与调度方。GitHub Actions 只负责采集数据
 4. ChatGPT 更新 `briefs/latest.json`，字段 `version: 2`、`edition`、`content`；`content` 是将同时发到对话和飞书的完整正文。更新触发 `.github/workflows/send-brief.yml`，由 `NEWS_FEISHU` 推送；旧版文件仍使用 `FEISHU_WEBHOOK`。
 5. 晚报在覆盖 `briefs/latest.json` 前先读取同日早报以供复盘。发送工作流以期次缓存成功记录，减少重复推送。网络超时可能导致投递结果不确定，应先查飞书，不能盲目重试。
 
+行情段先查 `market_recaps` 的 `turnover`、`breadth`、`indices`、`stocks`，再与 `quotes` 和普通 `news` 交叉核对。快照中的这些条目是候选快讯，保留标题、较长摘要、发布时间和原文链接。由 ChatGPT 判断实际交易时段、数值和市场口径，优先采用收盘快讯。成交额保留币种，成交量保留股数或手数，涨跌家数标明市场范围。主要指数列点位与涨跌幅，关键个股只选少数有代表性的行情。盘中、收盘和上个交易日数据分别标注。来源未提供的数据记为缺失。
+
 08:00 和 20:00 是 ChatGPT 开始执行的时间；等待采集和推送可能造成简报稍后送达。GitHub 写入需要主分支允许所使用的 GitHub App 提交；Secrets 需在该仓库的 Actions 中可用。

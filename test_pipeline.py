@@ -47,6 +47,24 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             render({"version": 2, "edition": "2026-11-07-am", "content": "文" * 5000})
 
+    @patch("collect_market_data.MAX_ITEMS", 1)
+    @patch("collect_market_data.collect")
+    def test_market_recaps_survive_the_general_news_cap(self, collect):
+        at = self.end - timedelta(hours=3)
+        macro = Flash("非农就业报告", "宏观消息", at, "财联社", "https://example.com/macro", 5)
+        recap = Flash("A股收盘简报", "盘面回顾。" * 45 +
+                      "沪深两市成交额1.60万亿元，上涨3250家、下跌1880家。上证指数涨0.8%，贵州茅台收涨2.1%。",
+                      at, "财联社", "https://example.com/close", 1)
+        collect.return_value = ([macro, recap], {}, [], [], 3)
+        record = build_record(self.request, "test-key", self.end)
+        self.assertEqual([item["title"] for item in record["news"]], [macro.title])
+        for kind in ("turnover", "breadth", "indices", "stocks"):
+            with self.subTest(kind=kind):
+                item, = record["market_recaps"][kind]
+                self.assertEqual(item["url"], recap.url)
+                self.assertEqual(item["published_at"], at.isoformat())
+                self.assertIn("成交额1.60万亿元", item["excerpt"])
+
 
 if __name__ == "__main__":
     unittest.main()
