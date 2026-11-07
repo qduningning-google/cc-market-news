@@ -543,43 +543,22 @@ def main():
 
 
 
-# Isolated one-off collection for an AI-reviewed 24-hour test.
+# One-off, AI-reviewed 24-hour test; this branch is not used by the scheduled job.
 def main():
     import sys
     if "--resolve" in sys.argv:
-        now = datetime.now(CN)
-        print("at=" + now.isoformat())
-        print("edition=ai-test-24h")
-        print("morning=ai-test-24h")
+        print("at=" + datetime.now(CN).isoformat())
+        print("edition=ai-test-send")
+        print("morning=ai-test-send")
         return
-    key = os.environ.get("X_API_KEY")
-    if not key:
-        raise SystemExit("X_API_KEY missing")
-    end = datetime.now(CN)
-    start = end - timedelta(hours=24)
-    results = []
-    errors = []
-    for day in dates_in_window(start, end):
-        for source in SOURCES:
-            try:
-                rows = ashare(key, "/v2/news/flash", source=source,
-                              start_date=day.strftime("%Y%m%d"), end_date=day.strftime("%Y%m%d"))
-                results.extend(parse_flashes(rows, source, start, end))
-            except (OSError, ValueError, TypeError, KeyError) as exc:
-                errors.append(source + ":" + type(exc).__name__)
-    if not results:
-        raise SystemExit("No 24h news retrieved; errors=" + ",".join(errors))
-    results.sort(key=lambda item: (item.rank, item.published), reverse=True)
-    print("AI_REVIEW_DATA_BEGIN")
-    print(json.dumps({"start": start.isoformat(), "end": end.isoformat(), "errors": errors,
-        "total": len(results), "items": [
-          {"source": item.source, "time": item.published.isoformat(), "title": item.title,
-           "content": item.body[:250], "url": item.url, "importance": item.rank}
-          for item in results[:55]]}, ensure_ascii=False))
-    print("AI_REVIEW_DATA_END")
-    output = sys.argv[sys.argv.index("--output") + 1] if "--output" in sys.argv else None
-    if output:
-        Path(output).write_text("{}", encoding="utf-8")
+    if "--send" not in sys.argv:
+        raise SystemExit("Test send must be explicitly selected")
+    text = "🧭 **风险偏好：分化。** 美股科技股反弹，但强就业推动美元、美债收益率及加息预期上行；中国增长方向仍需更多数据确认。\n\n📊 **已发生的行情**（北京时间）\n美股11月7日05:00收盘：标普500 **+0.31%**，纳指 **+1.09%**，道指 **−0.46%**；费城半导体指数 **+4.2%**。美元指数约 **102.26**；美债10年期收益率约 **4.86%**（均为11月6日美盘参考）。现货黄金 **4,074.36美元/盎司**（11月7日02:54）。[美股收盘](https://www.cls.cn/detail/2527950) · [美元与美债](https://www.reuters.com/world/asia-pacific/dollar-holds-yen-gains-equity-rout-saps-risk-appetite-ahead-payrolls-2026-11-06/) · [黄金](https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/)\n\n📰 **重点事实与影响**\n1. **美国非农明显超预期**（11月6日21:30）：10月新增 **16.5万人**，预期6.5万人；失业率 **4.1%**，平均时薪同比 **3.1%**。就业韧性缓解增长担忧，但工资压力强化利率高位预期。[美国劳工统计局](https://www.bls.gov/news.release/archives/empsit_11062026.htm)\n2. **美国消费者情绪回升、通胀预期下降**（11月6日23:00）：密歇根大学11月信心指数初值 **51.0**，前值48.0；一年期通胀预期 **4.3%**，前值4.7%。与强就业形成分化信号，仍需CPI确认。[密歇根大学](https://www.sca.isr.umich.edu/)\n3. **中美经贸负责人通话**（11月7日08:02报道）：双方同意继续发挥磋商机制、管控分歧；中方对近期限制措施表达关切。沟通有助缓和预期，但尚未公布具体政策调整。[新华社](https://www.xinhuanet.com/politics/leaders/20261107/ebbfb492652949189aee6a26a748bf1a/c.html)\n4. **中国外储小幅回升**（11月7日10:01报道）：10月末外储 **3.4052万亿美元**，环比增加49亿美元；官方称受汇率折算及资产价格变化影响，不能单凭此判断资金流向。[国家外汇局](https://www.safe.gov.cn/safe/2026/1106/28067.html)\n5. **霍尔木兹海峡油轮事件**（11月7日18:57报道）：据伊朗海军声明，一艘油轮触雷起火停航。地缘风险可能影响下周油价与通胀预期；影响程度待独立核实及开盘价格确认。[新华社](https://www.xinhuanet.com/world/20261107/4f456cae06264450a189ac9f96ed26ce/c.html)\n\n🔭 **未来判断**：周末A股、港股及美股休市，展望顺延至下一交易时段。关注油价、美元及美债收益率是否同时上行；若科技反弹扩散且收益率回落，风险偏好可改善。美股期货最新有效报价暂缺。A股和港股11月6日收盘分别为上证 **−1.10%**、恒指 **−1.27%**（窗口外参考）。[A股](https://stock.cngold.org/c/2026-11-06/c10864459.html) · [港股](https://finance.eastmoney.com/a/202611063924832341.html)\n\n数据：本次云端从AShareHub三源获取，按事件去重并以官方及原始报道交叉核对；分析由ChatGPT完成。"
+    card = payload("资本市场24小时测试简报｜11月7日", [markdown(text)])
+    if len(encode(card)) > LIMIT:
+        raise ValueError("Card too large")
+    deliver(card, os.environ.get("NEWS_FEISHU", ""))
+    print("飞书返回发送成功")
 
 if __name__ == "__main__":
     main()
