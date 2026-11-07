@@ -1,76 +1,40 @@
-# 资本市场早晚报独立运行，不读取或更新旧简报文件。
-name: 资本市场早晚报
-
+name: 资本市场资讯采集
 on:
-  schedule:
-    # GitHub Actions 使用 UTC，分别对应北京时间 08:00 和 20:00。
-    - cron: '0 0 * * *'
-    - cron: '0 12 * * *'
+  push:
+    branches: [main]
+    paths: [requests/latest.json]
   workflow_dispatch:
-    inputs:
-      window_end:
-        description: '可选：指定北京时间窗口结束点，例如 2026-11-07T08:00:00+08:00'
-        type: string
-      send:
-        description: '实际推送飞书（默认仅验证卡片）'
-        type: boolean
-        default: false
-
 permissions:
-  contents: read
-
+  contents: write
 concurrency:
-  group: capital-market-daily-brief
+  group: capital-market-collect
   cancel-in-progress: false
-
 jobs:
-  brief:
+  collect:
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-        with:
-          persist-credentials: false
-      - name: 确定北京时间窗口
-        id: window
-        env:
-          REQUESTED_END: ${{ inputs.window_end }}
-          SCHEDULE: ${{ github.event.schedule }}
-        run: |
-          args=(--resolve)
-          if [ -n "$REQUESTED_END" ]; then
-            args+=(--at "$REQUESTED_END")
-          elif [ -n "$SCHEDULE" ]; then
-            args+=(--schedule "$SCHEDULE")
-          fi
-          python3 market_brief.py "${args[@]}" >> "$GITHUB_OUTPUT"
-      - name: 查询该时段发送记录
-        id: sent
-        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
-        with:
-          path: .market-brief-state/${{ steps.window.outputs.edition }}.json
-          key: capital-market-brief-v1-${{ steps.window.outputs.edition }}
-      - name: 读取早报结论供晚报复盘
-        if: steps.window.outputs.edition != steps.window.outputs.morning
-        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
-        with:
-          path: .market-brief-state/${{ steps.window.outputs.morning }}.json
-          key: capital-market-brief-v1-${{ steps.window.outputs.morning }}
-      - name: 取数、分析并组装飞书卡片
+      - name: 获取资讯和行情
+        id: collect
+        continue-on-error: true
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
-          NEWS_FEISHU: ${{ secrets.NEWS_FEISHU }}
-          WINDOW_END: ${{ steps.window.outputs.at }}
-          SEND: ${{ github.event_name == 'schedule' || inputs.send == true }}
+        run: python3 collect_market_data.py
+      - name: 发布本期数据或错误状态
+        if: github.event_name == 'push'
         run: |
-          args=(--at "$WINDOW_END" --output "$RUNNER_TEMP/capital-market-card.json")
-          if [ "$SEND" = true ]; then
-            args+=(--send)
+          if [ -d data ] && [ -n "$(git status --porcelain -- data/)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/
+            git commit -m 'Publish market data snapshot'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+            done
+            exit 1
           fi
-          python3 market_brief.py "${args[@]}"
-      - name: 保存发送记录和早报结论
-        if: ${{ !cancelled() && steps.sent.outputs.cache-hit != 'true' && hashFiles(format('.market-brief-state/{0}.json', steps.window.outputs.edition)) != '' }}
-        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
-        with:
-          path: .market-brief-state/${{ steps.window.outputs.edition }}.json
-          key: capital-market-brief-v1-${{ steps.window.outputs.edition }}
+      - name: 报告采集错误
+        if: steps.collect.outcome == 'failure'
+        run: exit 1
