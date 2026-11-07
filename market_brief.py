@@ -542,6 +542,45 @@ def main():
         raise SystemExit("所有快讯请求失败")
 
 
+
+# Isolated one-off collection for an AI-reviewed 24-hour test.
+def main():
+    import sys
+    if "--resolve" in sys.argv:
+        now = datetime.now(CN)
+        print("at=" + now.isoformat())
+        print("edition=ai-test-24h")
+        print("morning=ai-test-24h")
+        return
+    key = os.environ.get("X_API_KEY")
+    if not key:
+        raise SystemExit("X_API_KEY missing")
+    end = datetime.now(CN)
+    start = end - timedelta(hours=24)
+    results = []
+    errors = []
+    for day in dates_in_window(start, end):
+        for source in SOURCES:
+            try:
+                rows = ashare(key, "/v2/news/flash", source=source,
+                              start_date=day.strftime("%Y%m%d"), end_date=day.strftime("%Y%m%d"))
+                results.extend(parse_flashes(rows, source, start, end))
+            except (OSError, ValueError, TypeError, KeyError) as exc:
+                errors.append(source + ":" + type(exc).__name__)
+    if not results:
+        raise SystemExit("No 24h news retrieved; errors=" + ",".join(errors))
+    results.sort(key=lambda item: (item.rank, item.published), reverse=True)
+    print("AI_REVIEW_DATA_BEGIN")
+    print(json.dumps({"start": start.isoformat(), "end": end.isoformat(), "errors": errors,
+        "total": len(results), "items": [
+          {"source": item.source, "time": item.published.isoformat(), "title": item.title,
+           "content": item.body[:250], "url": item.url, "importance": item.rank}
+          for item in results[:55]]}, ensure_ascii=False))
+    print("AI_REVIEW_DATA_END")
+    output = sys.argv[sys.argv.index("--output") + 1] if "--output" in sys.argv else None
+    if output:
+        Path(output).write_text("{}", encoding="utf-8")
+
 if __name__ == "__main__":
     main()
 
