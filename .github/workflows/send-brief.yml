@@ -13,8 +13,43 @@ jobs:
   send:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Send the news brief
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: 确定简报期次
+        id: edition
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, re
+          from pathlib import Path
+          record = json.loads(Path('briefs/latest.json').read_text(encoding='utf-8'))
+          if record.get('version') == 2:
+              edition = record.get('edition', '')
+              if not isinstance(edition, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}-(?:am|pm)', edition):
+                  raise ValueError('Invalid edition')
+              print('edition=' + edition)
+          PY
+      - name: 检查该期是否已经发送
+        id: sent
+        if: steps.edition.outputs.edition != ''
+        uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: .sent/${{ steps.edition.outputs.edition }}
+          key: chatgpt-market-brief-v1-${{ steps.edition.outputs.edition }}
+      - name: 发送简报
+        if: steps.sent.outputs.cache-hit != 'true'
         env:
+          NEWS_FEISHU: ${{ secrets.NEWS_FEISHU }}
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
-        run: python3 send_brief.py
+        run: |
+          python3 send_brief.py
+          if [ -n "${{ steps.edition.outputs.edition }}" ]; then
+            mkdir -p .sent
+            touch ".sent/${{ steps.edition.outputs.edition }}"
+          fi
+      - name: 保存发送记录
+        if: steps.edition.outputs.edition != '' && steps.sent.outputs.cache-hit != 'true'
+        uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
+        with:
+          path: .sent/${{ steps.edition.outputs.edition }}
+          key: chatgpt-market-brief-v1-${{ steps.edition.outputs.edition }}
