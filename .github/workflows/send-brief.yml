@@ -1,7 +1,7 @@
 name: Send market brief to Feishu
 on:
   push:
-    branches: [main]
+    branches: [test/chatgpt-market-pipeline-check]
     paths: [briefs/latest.json]
   workflow_dispatch:
 permissions:
@@ -39,6 +39,7 @@ jobs:
       - name: 发送简报
         if: steps.sent.outputs.cache-hit != 'true'
         env:
+          DRY_RUN: '1'
           NEWS_FEISHU: ${{ secrets.NEWS_FEISHU }}
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
         run: |
