@@ -1,9 +1,8 @@
 name: 资本市场资讯采集
 on:
   push:
-    branches: [main]
+    branches: [test/market-pipeline-live-20261107]
     paths: [requests/latest.json]
-  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
@@ -30,8 +29,8 @@ jobs:
             git add data/
             git commit -m 'Publish market data snapshot'
             for attempt in 1 2 3; do
-              git pull --rebase origin main
-              if git push origin HEAD:main; then exit 0; fi
+              git pull --rebase origin test/market-pipeline-live-20261107
+              if git push origin HEAD:test/market-pipeline-live-20261107; then exit 0; fi
             done
             exit 1
           fi

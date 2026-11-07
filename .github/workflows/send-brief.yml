@@ -1,9 +1,8 @@
 name: Send market brief to Feishu
 on:
   push:
-    branches: [main]
+    branches: [test/market-pipeline-live-20261107]
     paths: [briefs/latest.json]
-  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
@@ -35,7 +34,7 @@ jobs:
         uses: actions/cache/restore@caa296126883cff596d87d8935842f9db880ef25 # v5
         with:
           path: .sent/${{ steps.edition.outputs.edition }}
-          key: chatgpt-market-brief-v1-${{ steps.edition.outputs.edition }}
+          key: chatgpt-market-brief-live-test-v1-${{ steps.edition.outputs.edition }}
       - name: 发送简报
         if: steps.sent.outputs.cache-hit != 'true'
         env:
@@ -52,4 +51,4 @@ jobs:
         uses: actions/cache/save@caa296126883cff596d87d8935842f9db880ef25 # v5
         with:
           path: .sent/${{ steps.edition.outputs.edition }}
-          key: chatgpt-market-brief-v1-${{ steps.edition.outputs.edition }}
+          key: chatgpt-market-brief-live-test-v1-${{ steps.edition.outputs.edition }}
