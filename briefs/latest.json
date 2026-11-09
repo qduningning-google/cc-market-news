@@ -1,5 +1,16 @@
 {
-  "date": "2026-11-08",
-  "status": "no_news",
-  "articles": []
+  "date": "2026-11-09",
+  "status": "news",
+  "articles": [
+    {
+      "importance": "重要",
+      "category": "外资·观点与实际行动",
+      "title": "AI股回调后，部分全球投资者重新关注中国资产",
+      "summary": "彭博报道，安本投资看好中国科技企业潜力；法国巴黎银行称部分全球投资者有意以中国内地市场分散AI集中风险。实际行动方面，莲花资本首席投资官表示做多香港股票期货；报道未披露仓位规模，也不代表整体外资流入。",
+      "significance": "显示机构对中国资产作为分散配置选择的兴趣，但机构观点、个别期货仓位与整体外资实际流向应分别判断。彭博原文受限，概要依据署名转载：https://www.straitstimes.com/business/ai-slump-revives-asias-forgotten-trades-from-china-to-india",
+      "source": "彭博社（The Straits Times转载；原文受限）",
+      "published_at": "2026-11-08 10:33（北京时间，转载时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-08/ai-slump-revives-asia-s-forgotten-trades-from-china-to-india"
+    }
+  ]
 }
