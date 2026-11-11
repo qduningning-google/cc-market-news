@@ -1,26 +1,36 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "status": "news",
   "articles": [
     {
-      "importance": "重要",
-      "category": "港股·IPO市场",
-      "title": "彭博：香港IPO年内募资达519亿美元，为历史第二高",
-      "summary": "彭博统计，截至11月10日，香港年内首次公开发行募资519亿美元，超过2020年的516亿美元，仅次于2010年的578亿美元纪录；其中10笔交易募资超过10亿美元。安本投资认为后续发行主要受投资者需求及定价影响。",
-      "significance": "港股融资规模回升显示中国科技企业海外募资渠道活跃；后续发行仍取决于审批、估值和市场需求。",
-      "source": "彭博社（The Edge Malaysia转载，原文未能读取）",
-      "published_at": "2026-11-10 17:47（北京时间，转载时间）",
-      "url": "https://theedgemalaysia.com/node/825172"
+      "importance": "重大",
+      "category": "监管政策·债券税收",
+      "title": "彭博：央行调查银行对国债和地方债利息征税的反应",
+      "summary": "彭博援引知情人士称，央行上月询问多家银行，若对所持国债及地方政府债利息收入征收25%所得税，将如何影响持债意愿。消息人士称尚不清楚是否或何时征税；这是调查消息，不是已出台税收政策。",
+      "significance": "若将来实施，可能改变银行债券需求和收益率，但税率、实施范围和时间均未确定。",
+      "source": "彭博社（Bloomberg Law原文；The Edge Singapore转载核对）",
+      "published_at": "2026-11-11 15:45（北京时间，Bloomberg Law）",
+      "url": "https://news.bloomberglaw.com/daily-tax-report-international/china-gauges-bond-interest-tax-with-yields-near-record-low-1"
     },
     {
       "importance": "重要",
-      "category": "港股·AI芯片IPO",
-      "title": "阿里巴巴披露平头哥已保密递交香港上市申请",
-      "summary": "阿里巴巴称，旗下芯片公司平头哥已于9月11日向港交所保密递交A1上市申请；交易规模、发行结构及上市后持股比例尚未确定，上市仍需监管批准。阿里港股11月10日收跌2.9%。",
-      "significance": "拟分拆为AI芯片业务提供独立融资渠道，也提供观察港股科技IPO估值和需求的机会；递表不代表上市已获最终批准。",
+      "category": "监管政策·货币与市场",
+      "title": "央行三季度报告提出加强逆周期调节、维护股债汇市场稳定",
+      "summary": "路透援引央行三季度货币政策执行报告称，将加大逆周期调节，继续实施适度宽松货币政策、适时调整工具，并维护股市、债市和外汇市场平稳运行。报道未列出具体新增利率措施或实施时间。",
+      "significance": "正式政策表态为市场提供流动性与稳定预期，但不应视作已经降息或出台新的定量宽松。",
       "source": "路透社",
-      "published_at": "2026-11-10 20:47（北京时间）",
-      "url": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/"
+      "published_at": "2026-11-11 19:26（北京时间）",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-vows-step-up-policy-support-economy-2026-11-11/"
+    },
+    {
+      "importance": "重要",
+      "category": "外资·观点与融资行动",
+      "title": "花旗预计中企境外融资扩展至生物科技和先进制造",
+      "summary": "彭博援引花旗投行中国市场负责人称，花旗今年协助中国企业在离岸市场融资超过400亿美元；该行预计热潮延续至2027年并扩展至生物科技和先进制造。负责人称不少IPO项目欧美投资者占比超过50%，未给出总体市场占比。",
+      "significance": "体现个别国际投行观察到的融资交易和投资者需求；行业扩展及明年持续性属于预测，并非全市场资金流统计。彭博原文受限，依据Yahoo财经彭博署名转载。",
+      "source": "彭博社（Yahoo财经转载）",
+      "published_at": "2026-11-11 16:00（北京时间，转载时间）",
+      "url": "https://hk.finance.yahoo.com/news/%E8%8A%B1%E6%97%97%E6%96%99%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E5%A2%83%E5%A4%96%E7%B1%8C%E8%B3%87%E7%86%B1%E5%BB%B6%E7%BA%8C%E8%87%B32027%E5%B9%B4-%E8%A1%8C%E6%A5%AD%E5%88%86%E4%BD%88%E6%9B%B4%E5%A4%9A%E5%85%83-080009549.html"
     }
   ]
 }
