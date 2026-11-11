@@ -1,36 +1,26 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "status": "news",
   "articles": [
     {
-      "importance": "重大",
-      "category": "国家队资金·ETF流向",
-      "title": "彭博统计：国家队偏好ETF上周净流入超1560亿元，创周度纪录",
-      "summary": "彭博数据显示，截至11月6日的一周，国家队常交易的9只ETF合计净流入超1560亿元，高于2025年4月近1400亿元的此前周度高点；此前报道的11月3日单日767亿元包含在该周内。ETF净流入不等于已证实全部由国家队买入。",
-      "significance": "周度数据更新了此前单日观察，有助衡量稳市资金流入力度，但不能确认投资者身份或推断后续持续性。彭博原文受限，概要依据可见摘要及二手报道。",
-      "source": "彭博社（原文受限，数据依据可见摘要及二手报道）",
-      "published_at": "2026-11-09（北京时间，具体发布时间未核实）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-09/china-s-national-team-ramps-up-etf-buying-to-record-high"
+      "importance": "重要",
+      "category": "港股·IPO市场",
+      "title": "彭博：香港IPO年内募资达519亿美元，为历史第二高",
+      "summary": "彭博统计，截至11月10日，香港年内首次公开发行募资519亿美元，超过2020年的516亿美元，仅次于2010年的578亿美元纪录；其中10笔交易募资超过10亿美元。安本投资认为后续发行主要受投资者需求及定价影响。",
+      "significance": "港股融资规模回升显示中国科技企业海外募资渠道活跃；后续发行仍取决于审批、估值和市场需求。",
+      "source": "彭博社（The Edge Malaysia转载，原文未能读取）",
+      "published_at": "2026-11-10 17:47（北京时间，转载时间）",
+      "url": "https://theedgemalaysia.com/node/825172"
     },
     {
       "importance": "重要",
-      "category": "债券·信用风险",
-      "title": "珠海华发信用压力考验中国债券评级体系",
-      "summary": "彭博报道，华发此前未兑付两项信托产品，联合资信维持其境内AAA评级，惠誉为BBB；两家均将其列入负面观察。中国证券业协会数据显示，截至二季度末6000多家债券发行人中约28%获境内AAA评级。",
-      "significance": "评级和债券市场价格之间的差距关系投资者对国企信用风险与潜在降级抛售的评估；评级维持不代表风险不变。",
-      "source": "彭博社（The Business Times转载；原文未能读取）",
-      "published_at": "2026-11-09 13:09（北京时间，转载时间）",
-      "url": "https://www.businesstimes.com.sg/companies-markets/sudden-distress-top-rated-firm-tests-chinas-rating-crackdown"
-    },
-    {
-      "importance": "重要",
-      "category": "宏观·价格与市场",
-      "title": "10月PPI同比升5.7%，CPI涨幅回落至0.7%",
-      "summary": "国家统计局数据显示，10月PPI同比上涨5.7%，高于9月5.0%和路透调查预期5.3%；CPI同比上涨0.7%，低于9月0.9%。路透称能源成本推高上游价格，疲弱需求限制向消费端传导。",
-      "significance": "上游成本上升与消费价格放缓并存，可能影响企业利润及市场对货币政策的预期；Capital Economics预计PPI明年重回通缩，属于机构预测。",
+      "category": "港股·AI芯片IPO",
+      "title": "阿里巴巴披露平头哥已保密递交香港上市申请",
+      "summary": "阿里巴巴称，旗下芯片公司平头哥已于9月11日向港交所保密递交A1上市申请；交易规模、发行结构及上市后持股比例尚未确定，上市仍需监管批准。阿里港股11月10日收跌2.9%。",
+      "significance": "拟分拆为AI芯片业务提供独立融资渠道，也提供观察港股科技IPO估值和需求的机会；递表不代表上市已获最终批准。",
       "source": "路透社",
-      "published_at": "2026-11-09 09:39（北京时间，报道后续更新）",
-      "url": "https://www.reuters.com/world/asia-pacific/chinas-october-producer-inflation-quickens-further-consumer-prices-edge-down-2026-11-09/"
+      "published_at": "2026-11-10 20:47（北京时间）",
+      "url": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/"
     }
   ]
 }
