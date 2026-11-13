@@ -1,16 +1,36 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "status": "news",
   "articles": [
     {
       "importance": "重要",
-      "category": "其他市场要闻·科技股与算力",
-      "title": "中国 AI 企业寻求锁定海外英伟达算力，港股科技股承压",
-      "summary": "路透援引三名知情人士称，一家中国大型云服务商内部讨论锁定海外英伟达算力，部分企业接洽数据中心；企业担忧美国可能限制通过海外云端远程使用先进芯片。报道时阿里巴巴港股盘中一度跌7.1%，智谱和 MiniMax 均跌至少7%。相关法案尚待美国参议院审议，限制并未因此实施。",
-      "significance": "算力获取的不确定性影响中国 AI 企业的成本和增长预期，并已反映在相关港股价格；企业动作来自匿名消息人士，不能视为已签约或新增限制已落地。",
-      "source": "路透社",
-      "published_at": "2026-11-12 13:31（北京时间）",
-      "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/"
+      "category": "监管政策·回购增持贷款",
+      "title": "路透评论：回购增持贷款核准约4400亿元，实际发放约2800亿元",
+      "summary": "路透 Breakingviews 称，截至9月，在股票回购增持等两项支持工具最初合计8000亿元额度下，银行已核准约4400亿元贷款额度，其中实际发放约2800亿元；此前央行宣布相关工具常态化并将再贷款利率降至1%。以上为存量数据，不能与11月新增申报额度直接相加。",
+      "significance": "核准与实际发放存在差距，有助于评估政策落地力度；路透评论认为过度推动可能给银行信贷审慎性带来风险，这是分析观点。",
+      "source": "路透社（Breakingviews评论）",
+      "published_at": "2026-11-13 12:43（北京时间）",
+      "url": "https://www.reuters.com/commentary/breakingviews/chinas-stock-backstop-risks-market-misfire-2026-11-13/"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·债券与税收",
+      "title": "彭博：债券征税担忧传导至政策性银行债券",
+      "summary": "彭博可见摘要称，对中国政府债券可能征税的担忧波及大型政策性银行债券，引发抛售并推升其融资成本。此前报道的央行调查仍是知情人士消息，尚无正式征税决定。彭博原文受限，本概要仅依据可见摘要。",
+      "significance": "税收预期已影响其他债券定价，值得关注政策性银行融资成本和市场流动性；并不意味着税收政策已经出台。",
+      "source": "彭博社（原文摘要）",
+      "published_at": "2026-11-13 12:06（北京时间，新闻索引时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-13/china-policy-bank-bonds-suffer-selloff-as-tax-worries-hit-market"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·公司融资与估值",
+      "title": "据报道字节跳动拟以约4000亿美元估值回购最多60亿美元股份",
+      "summary": "路透转引 The Information 称，字节跳动拟向现有投资者回购最多60亿美元股份，估值约4000亿美元；路透表示未能立即独立核实。彭博援引了解方案人士称，拟每股241.35美元，并提议将上市或外部股东全额回售权的期限延至2030年12月11日；彭博内容依据 The Edge Malaysia 授权转载：https://theedgemalaysia.com/node/825623",
+      "significance": "回购方案提供非上市科技企业估值和投资者退出安排的参考；金额是上限，拟议延期不代表已获通过或公司已上市。",
+      "source": "路透社；彭博社（The Edge Malaysia授权转载）",
+      "published_at": "2026-11-13 09:01（路透，北京时间）；2026-11-13（彭博转载，具体时间未核实）",
+      "url": "https://www.reuters.com/legal/transactional/tiktok-owner-bytedance-plans-buyback-400-billion-valuation-information-reports-2026-11-13/"
     }
   ]
 }
