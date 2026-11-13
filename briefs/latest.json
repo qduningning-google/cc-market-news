@@ -1,36 +1,16 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "status": "news",
   "articles": [
     {
-      "importance": "重大",
-      "category": "监管政策·债券税收",
-      "title": "彭博：央行调查银行对国债和地方债利息征税的反应",
-      "summary": "彭博援引知情人士称，央行上月询问多家银行，若对所持国债及地方政府债利息收入征收25%所得税，将如何影响持债意愿。消息人士称尚不清楚是否或何时征税；这是调查消息，不是已出台税收政策。",
-      "significance": "若将来实施，可能改变银行债券需求和收益率，但税率、实施范围和时间均未确定。",
-      "source": "彭博社（Bloomberg Law原文；The Edge Singapore转载核对）",
-      "published_at": "2026-11-11 15:45（北京时间，Bloomberg Law）",
-      "url": "https://news.bloomberglaw.com/daily-tax-report-international/china-gauges-bond-interest-tax-with-yields-near-record-low-1"
-    },
-    {
       "importance": "重要",
-      "category": "监管政策·货币与市场",
-      "title": "央行三季度报告提出加强逆周期调节、维护股债汇市场稳定",
-      "summary": "路透援引央行三季度货币政策执行报告称，将加大逆周期调节，继续实施适度宽松货币政策、适时调整工具，并维护股市、债市和外汇市场平稳运行。报道未列出具体新增利率措施或实施时间。",
-      "significance": "正式政策表态为市场提供流动性与稳定预期，但不应视作已经降息或出台新的定量宽松。",
+      "category": "其他市场要闻·科技股与算力",
+      "title": "中国 AI 企业寻求锁定海外英伟达算力，港股科技股承压",
+      "summary": "路透援引三名知情人士称，一家中国大型云服务商内部讨论锁定海外英伟达算力，部分企业接洽数据中心；企业担忧美国可能限制通过海外云端远程使用先进芯片。报道时阿里巴巴港股盘中一度跌7.1%，智谱和 MiniMax 均跌至少7%。相关法案尚待美国参议院审议，限制并未因此实施。",
+      "significance": "算力获取的不确定性影响中国 AI 企业的成本和增长预期，并已反映在相关港股价格；企业动作来自匿名消息人士，不能视为已签约或新增限制已落地。",
       "source": "路透社",
-      "published_at": "2026-11-11 19:26（北京时间）",
-      "url": "https://www.reuters.com/world/asia-pacific/chinas-central-bank-vows-step-up-policy-support-economy-2026-11-11/"
-    },
-    {
-      "importance": "重要",
-      "category": "外资·观点与融资行动",
-      "title": "花旗预计中企境外融资扩展至生物科技和先进制造",
-      "summary": "彭博援引花旗投行中国市场负责人称，花旗今年协助中国企业在离岸市场融资超过400亿美元；该行预计热潮延续至2027年并扩展至生物科技和先进制造。负责人称不少IPO项目欧美投资者占比超过50%，未给出总体市场占比。",
-      "significance": "体现个别国际投行观察到的融资交易和投资者需求；行业扩展及明年持续性属于预测，并非全市场资金流统计。彭博原文受限，依据Yahoo财经彭博署名转载。",
-      "source": "彭博社（Yahoo财经转载）",
-      "published_at": "2026-11-11 16:00（北京时间，转载时间）",
-      "url": "https://hk.finance.yahoo.com/news/%E8%8A%B1%E6%97%97%E6%96%99%E4%B8%AD%E5%9C%8B%E4%BC%81%E6%A5%AD%E5%A2%83%E5%A4%96%E7%B1%8C%E8%B3%87%E7%86%B1%E5%BB%B6%E7%BA%8C%E8%87%B32027%E5%B9%B4-%E8%A1%8C%E6%A5%AD%E5%88%86%E4%BD%88%E6%9B%B4%E5%A4%9A%E5%85%83-080009549.html"
+      "published_at": "2026-11-12 13:31（北京时间）",
+      "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/"
     }
   ]
 }
