@@ -1,16 +1,5 @@
 {
-  "date": "2026-11-15",
-  "status": "news",
-  "articles": [
-    {
-      "importance": "重要",
-      "category": "监管政策·量化交易与长期资金",
-      "title": "吴清：研究评估量化交易和股份减持规则，关注全球资产重定价",
-      "summary": "彭博可见摘要报道，证监会主席吴清称，地缘政治紧张及政策不确定性下，全球资本市场正经历新一轮资产重定价和再平衡。根据证监会讲话全文，他提出研究评估量化交易、股份减持规则的优化；2024年以来社保、保险、年金合计净买入A股超1.5万亿元。规则仍处研究评估阶段，未宣布具体调整。讲话全文：https://www.thepaper.cn/newsDetail_forward_34476628",
-      "significance": "量化和减持制度直接影响交易生态；长期资金数据反映累计净买入，不等于近期新增资金，也不能推断未来政策方向。彭博全文受限，报道内容依据可见摘要，具体讲话另据证监会全文核对。",
-      "source": "彭博社（原文可见摘要）；证监会讲话全文（澎湃转载）",
-      "published_at": "2026-11-14 13:20（北京时间，彭博新闻索引时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-14/china-s-market-regulator-warns-of-global-asset-repricing-risks"
-    }
-  ]
+  "date": "2026-11-16",
+  "status": "no_news",
+  "articles": []
 }
