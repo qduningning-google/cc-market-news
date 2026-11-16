@@ -1,5 +1,36 @@
 {
-  "date": "2026-11-16",
-  "status": "no_news",
-  "articles": []
+  "date": "2026-11-17",
+  "status": "news",
+  "articles": [
+    {
+      "importance": "重大",
+      "category": "监管政策·海外算力限制",
+      "title": "美国发布新规则，限制中国企业通过海外数据中心获取先进AI算力",
+      "summary": "路透称，美国宣布新出口管制：向新加坡、泰国、马来西亚、印度尼西亚和巴西出口受管制先进芯片需申请美国许可；向总部位于中国企业提供大量算力的海外数据中心须在90天内取得许可，否则面临后续出口限制。部分美国企业运营的数据中心和电商、社交媒体推荐系统有豁免；具体范围以规则为准。",
+      "significance": "上次简报提及的潜在收紧已发展为正式规则，可能影响中国AI企业海外算力获取、成本和相关科技股预期；并非所有芯片或全部云服务均被禁止。",
+      "source": "路透社；彭博社（Bloomberg Law原文）",
+      "published_at": "2026-11-16 21:46（路透，北京时间，报道后续更新）；2026-11-17 01:17（彭博，北京时间）",
+      "url": "https://www.reuters.com/legal/litigation/us-issues-rule-protect-advanced-ai-chips-being-accessed-remotely-2026-11-16/"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·香港地产与融资",
+      "title": "新世界拟供股募资249亿港元，现有股东面临稀释",
+      "summary": "新世界发展公布每持1股可认购11股，每股0.90港元，拟募资约249亿港元；认购价较停牌前收盘价折让81.5%，较理论除权价折让26.9%。路透评论称，拟以部分所得偿还82亿港元银团贷款的10%，余款拟展期两年；方案需独立股东批准。",
+      "significance": "这是香港高负债地产企业的重要再融资和信用风险案例；股东不参与将面临大幅持股稀释，方案尚未完成。",
+      "source": "路透社（Breakingviews评论）",
+      "published_at": "2026-11-16 15:30（北京时间）",
+      "url": "https://www.reuters.com/commentary/breakingviews/new-world-family-dishes-out-more-shareholder-pain-2026-11-16/"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·经济与市场",
+      "title": "10月消费、工业和投资弱于预期，机构对刺激力度看法不同",
+      "summary": "路透报道，10月零售额同比增0.4%，工业增加值增4.8%，均低于调查预期；前10月固定资产投资同比降8.1%，房地产投资降21.6%。彭博经济研究估计10月单月固定资产投资同比降17%，彭博原文受限，估算依据The Edge Malaysia署名转载：https://theedgemalaysia.com/node/825867",
+      "significance": "需求与投资疲弱可能影响企业盈利及股债市场预期。荷兰国际集团经济学家认为需要更多支持；澳新分析师预计年内无新刺激，均属机构观点。",
+      "source": "路透社；彭博社（The Edge Malaysia转载）",
+      "published_at": "2026-11-16 10:06（路透，北京时间）；2026-11-16 11:00（彭博转载，北京时间）",
+      "url": "https://www.reuters.com/world/chinas-factory-output-retail-sales-growth-slow-october-2026-11-16/"
+    }
+  ]
 }
