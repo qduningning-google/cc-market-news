@@ -1,46 +1,46 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "status": "news",
   "articles": [
     {
       "importance": "重要",
-      "category": "监管政策·回购增持贷款",
-      "title": "彭博：11月52家公司签约回购贷款约130亿元",
-      "summary": "彭博统计，截至报道时，11月52家公司与银行签订约130亿元股票购买贷款协议，超过此前单月129亿元纪录；银行同期向央行申报的再贷款额度超过2000亿元。协议额、银行申报额和实际发放及回购金额口径不同。彭博原文受限，依据Mint署名授权转载。",
-      "significance": "签约数据有助于观察稳市工具落地，但不能把额度视作已买入；瑞银策略师认为单靠增加回购不足以扭转市场情绪，属于机构观点。",
-      "source": "彭博社（Mint授权转载）",
-      "published_at": "2026-11-17 08:28（北京时间，Mint转载时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-17/china-s-buyback-push-struggles-to-put-a-floor-under-stocks"
+      "category": "长期资金·保险资金",
+      "title": "平安高管称计划降低公开股票配置，并已参与港股ETF",
+      "summary": "平安联席首席执行官郭晓涛接受彭博专访时表示，计划降低公开股票配置，并配置固定收益及其他另类资产；他还称公司是投资香港ETF的早期参与者。未披露减配时间、幅度、具体市场及ETF规模。内容据Yahoo财经刊载的彭博专访视频及文字。",
+      "significance": "这为观察险资配置方向提供个案：减配属于计划，港股ETF投资是高管所述已有行动，均不能推断平安全部卖出A股或代表整个保险行业。",
+      "source": "彭博社（Yahoo财经转载专访视频）",
+      "published_at": "2026-11-18 09:39（北京时间，Yahoo财经转载时间）",
+      "url": "https://finance.yahoo.com/video/ping-group-reduce-public-equity-013942902.html"
     },
     {
       "importance": "重要",
-      "category": "外资·实际持仓",
-      "title": "彭博：外资10月增持中国国债395亿元",
-      "summary": "彭博报道称，10月境外投资者持有中国在岸国债增加395亿元至2.08万亿元，连续第6个月增加，增幅为5月以来最大；数据引自中债登。彭博全文受限，数字依据CNBC-TV18二次引述核对，非原文全文。",
-      "significance": "显示外资在该月增加在岸国债持仓，但持仓变化不完全等于净交易流入，也不代表全部中国债券或股票获得增持。",
-      "source": "彭博社（可见摘要；CNBC-TV18二次引述）",
-      "published_at": "2026-11-17 10:21（北京时间，新闻索引时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-17/foreign-funds-bought-most-china-bonds-since-may-on-haven-appeal"
+      "category": "其他市场要闻·科技与算力",
+      "title": "英伟达称已停止向中国供应获许可的Hopper数据中心产品",
+      "summary": "路透报道，英伟达临时CEO称，截至10月25日的季度向中国销售24亿美元获许可Hopper产品，目前已不再发货，业绩指引未计入相关后续销售。Hopper系列包括H200；公司未解释停供原因，也未说明是否永久。",
+      "significance": "这是中国企业先进算力供应的重要新增变化，可能影响云计算和AI产业链预期；停供是公司披露，不能推断为所有英伟达产品均遭禁售。",
+      "source": "路透社",
+      "published_at": "2026-11-18 17:16（北京时间）",
+      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
     },
     {
       "importance": "重要",
-      "category": "外资·机构观点",
-      "title": "瑞银预计MSCI中国指数有10%至15%上涨空间",
-      "summary": "彭博可见摘要援引瑞银观点称，盈利增长和较低估值可能推动MSCI中国指数上涨10%至15%。原文受限，概要仅依据可见摘要。",
-      "significance": "这是海外机构对中国股票估值和盈利的预测，实际回报并无保证，也不代表瑞银已增持或外资整体转向。",
-      "source": "彭博社（原文可见摘要）",
-      "published_at": "2026-11-17 14:06（北京时间，新闻索引时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-17/china-stock-bull-ubs-sees-upside-msci-china-index-earnings-valuation"
+      "category": "其他市场要闻·融资与AI",
+      "title": "彭博：银行暂停评估与字节跳动算力有关的4.8亿美元贷款",
+      "summary": "彭博援引知情人士称，银行暂停推进一笔拟为马来西亚数据中心购买英伟达芯片的4.8亿美元贷款，相关算力拟供字节跳动使用；5家评估该交易的贷款机构内部讨论是否退出或不参与。尚未说明交易最终是否取消。",
+      "significance": "显示美国新规开始影响中国科技企业相关海外算力融资；融资仍处评估阶段，不等于已放款或已永久终止。彭博原文受限，依据The Business Times署名转载。",
+      "source": "彭博社（The Business Times授权转载）",
+      "published_at": "2026-11-18 10:52（北京时间，转载时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-17/banks-pause-480-million-chip-loan-tied-to-china-s-bytedance"
     },
     {
       "importance": "重要",
-      "category": "其他市场要闻·科技股",
-      "title": "美国算力新规后中国科技股分化：云服务股下跌、芯片股上涨",
-      "summary": "路透报道，受美国先进芯片与海外算力限制影响，报道时阿里巴巴和腾讯港股分别跌约5%和3%，中芯国际涨约7%；彭博署名转载称阿里巴巴盘中一度跌5.6%、百度跌6.6%。不同数字为不同报道时点，并非全部收盘价。",
-      "significance": "股价反映市场对云算力受限及国产替代机会的不同预期；政策影响和企业业绩变化仍待观察。彭博概要依据The Edge Malaysia转载：https://theedgemalaysia.com/node/826104",
-      "source": "路透社；彭博社（The Edge Malaysia转载）",
-      "published_at": "2026-11-17 12:34（北京时间，路透报道，后续更新）；2026-11-17（彭博转载，具体时间未核实）",
-      "url": "https://www.reuters.com/world/asia-pacific/us-ai-chip-curbs-threaten-southeast-asia-data-centre-boom-shares-tumble-2026-11-17/"
+      "category": "其他市场要闻·腾讯业绩",
+      "title": "腾讯三季度营收增长8%不及预期，称芯片限制可能拖慢模型训练",
+      "summary": "路透报道，腾讯三季度营收2073亿元，同比增长8%，低于分析师预期的2108亿元；资本开支814亿元，上一季度为528亿元。公司高管称美国新规不会显著影响云收入，但可能拖慢下一代AI模型开发，属于公司判断。",
+      "significance": "大市值科技公司的收入和AI投入直接影响市场对盈利与资本回报的预期；限制实际影响仍需后续业绩验证。",
+      "source": "路透社",
+      "published_at": "2026-11-18 16:43（北京时间，报道后续更新）",
+      "url": "https://www.reuters.com/technology/tencent-q3-revenue-growth-slows-8-misses-estimates-2026-11-18/"
     }
   ]
 }
