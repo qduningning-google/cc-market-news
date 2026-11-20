@@ -1,46 +1,26 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "news",
   "articles": [
     {
       "importance": "重要",
-      "category": "长期资金·保险资金",
-      "title": "平安高管称计划降低公开股票配置，并已参与港股ETF",
-      "summary": "平安联席首席执行官郭晓涛接受彭博专访时表示，计划降低公开股票配置，并配置固定收益及其他另类资产；他还称公司是投资香港ETF的早期参与者。未披露减配时间、幅度、具体市场及ETF规模。内容据Yahoo财经刊载的彭博专访视频及文字。",
-      "significance": "这为观察险资配置方向提供个案：减配属于计划，港股ETF投资是高管所述已有行动，均不能推断平安全部卖出A股或代表整个保险行业。",
-      "source": "彭博社（Yahoo财经转载专访视频）",
-      "published_at": "2026-11-18 09:39（北京时间，Yahoo财经转载时间）",
-      "url": "https://finance.yahoo.com/video/ping-group-reduce-public-equity-013942902.html"
+      "category": "外资·实际投资与融资",
+      "title": "彭博：阿曼主权基金参投中国AI科研企业近2亿美元融资",
+      "summary": "彭博可见摘要称，中国企业MegaRobo Technologies完成近2亿美元融资，投资者包括阿曼主权财富基金；公司运用AI与机器人加速药物研究。彭博全文受限，概要依据可见摘要，未披露阿曼基金单独出资额。",
+      "significance": "体现个别境外长期资金对中国AI与生命科学领域的实际投资；不能由单笔交易推断外资整体流向。",
+      "source": "彭博社（原文可见摘要）",
+      "published_at": "2026-11-19 08:20（北京时间，新闻索引时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-19/china-ai-biotech-firm-raises-200-million-in-oman-backed-round"
     },
     {
       "importance": "重要",
-      "category": "其他市场要闻·科技与算力",
-      "title": "英伟达称已停止向中国供应获许可的Hopper数据中心产品",
-      "summary": "路透报道，英伟达临时CEO称，截至10月25日的季度向中国销售24亿美元获许可Hopper产品，目前已不再发货，业绩指引未计入相关后续销售。Hopper系列包括H200；公司未解释停供原因，也未说明是否永久。",
-      "significance": "这是中国企业先进算力供应的重要新增变化，可能影响云计算和AI产业链预期；停供是公司披露，不能推断为所有英伟达产品均遭禁售。",
+      "category": "其他市场要闻·公司业绩与算力",
+      "title": "阿里巴巴营收超预期，称新算力限制可能影响明年业务",
+      "summary": "路透报道，阿里巴巴截至9月季度营收2715.2亿元，高于预期的2698.1亿元；AI云及计算业务收入609.7亿元，同比增长53%。中国电商收入下降5%；资本开支升至504.8亿元。公司称新算力出口限制可能影响明年产品和服务，影响仍在评估。",
+      "significance": "云业务增长、电商疲弱与资本开支同时影响大市值中概股盈利预期；明年影响属于公司评估，非已经发生的业绩损失。",
       "source": "路透社",
-      "published_at": "2026-11-18 17:16（北京时间）",
-      "url": "https://www.reuters.com/world/china/nvidia-stops-shipping-us-approved-ai-chips-china-2026-11-18/"
-    },
-    {
-      "importance": "重要",
-      "category": "其他市场要闻·融资与AI",
-      "title": "彭博：银行暂停评估与字节跳动算力有关的4.8亿美元贷款",
-      "summary": "彭博援引知情人士称，银行暂停推进一笔拟为马来西亚数据中心购买英伟达芯片的4.8亿美元贷款，相关算力拟供字节跳动使用；5家评估该交易的贷款机构内部讨论是否退出或不参与。尚未说明交易最终是否取消。",
-      "significance": "显示美国新规开始影响中国科技企业相关海外算力融资；融资仍处评估阶段，不等于已放款或已永久终止。彭博原文受限，依据The Business Times署名转载。",
-      "source": "彭博社（The Business Times授权转载）",
-      "published_at": "2026-11-18 10:52（北京时间，转载时间）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-17/banks-pause-480-million-chip-loan-tied-to-china-s-bytedance"
-    },
-    {
-      "importance": "重要",
-      "category": "其他市场要闻·腾讯业绩",
-      "title": "腾讯三季度营收增长8%不及预期，称芯片限制可能拖慢模型训练",
-      "summary": "路透报道，腾讯三季度营收2073亿元，同比增长8%，低于分析师预期的2108亿元；资本开支814亿元，上一季度为528亿元。公司高管称美国新规不会显著影响云收入，但可能拖慢下一代AI模型开发，属于公司判断。",
-      "significance": "大市值科技公司的收入和AI投入直接影响市场对盈利与资本回报的预期；限制实际影响仍需后续业绩验证。",
-      "source": "路透社",
-      "published_at": "2026-11-18 16:43（北京时间，报道后续更新）",
-      "url": "https://www.reuters.com/technology/tencent-q3-revenue-growth-slows-8-misses-estimates-2026-11-18/"
+      "published_at": "2026-11-19 18:11（北京时间，报道后续更新）",
+      "url": "https://www.reuters.com/business/retail-consumer/chinas-alibaba-beats-quarterly-revenue-estimates-2026-11-19/"
     }
   ]
 }
