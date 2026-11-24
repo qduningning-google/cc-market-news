@@ -1,16 +1,26 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "status": "news",
   "articles": [
     {
-      "importance": "重大",
-      "category": "监管与国家队·ETF资金流",
-      "title": "彭博：国家队常交易的九只 ETF 单日净流入创纪录",
-      "summary": "彭博统计显示，11月20日九只国家队常交易 ETF 合计净流入约900亿元，超过2025年4月创下的870亿元纪录；嘉实沪深300 ETF和华夏上证50 ETF分别净流入约230亿元和217亿元，均创各自纪录。彭博将此视为国家队加大买入力度的迹象，但 ETF 净流入不等于已核实全部来自国家队。原文受限，依据彭博授权转载。",
-      "significance": "大规模资金流入反映稳市资金可能加强介入；彭博同时指出市场广度依然疲弱，11月20日深圳和上海站上200日均线的股票分别仅占8%和12%，资金流入不能证明市场已经见底。",
-      "source": "彭博社（The Business Times 授权转载）",
-      "published_at": "2026-11-23 09:48（北京时间，原文索引时间）；14:46（转载）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-23/china-state-funds-ramp-up-etf-buying-to-record-as-rout-deepens"
+      "importance": "重要",
+      "category": "监管政策·跨境人民币与债券",
+      "title": "中国与新加坡拟扩展人民币融资安排，探讨将中国国债纳入抵押品",
+      "summary": "彭博报道，新加坡金管局与中国央行宣布，拟将现有人民币安排升级为企业融资和流动性两项工具，企业融资支持第三国贸易、营运资金及资本开支，期限扩大至最长6个月；双方正在探讨接受中国国债作抵押品。原文受限，依据 BusinessMirror 彭博授权转载和新加坡金管局公告。",
+      "significance": "安排可能改善离岸人民币融资和中国债券跨境使用；中国国债作为合格抵押品仍在探讨，并非已实施。",
+      "source": "彭博社（BusinessMirror 授权转载）",
+      "published_at": "2026-11-24 12:50（北京时间，原文索引时间）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/singapore-china-to-deepen-yuan-ties-with-focus-on-corporates"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·上市公司与芯片",
+      "title": "阿里巴巴新加坡子公司被美国列入实体清单，公司否认违规",
+      "summary": "路透报道，美国商务部将阿里巴巴新加坡子公司 Apex 和云计算企业 Megaspeed 列入实体清单，理由是先进计算产品存在被转用于未经授权用途或用户的重大风险。阿里称 Apex 从未违规转移受限芯片，将寻求法律途径。知情人士称 Apex 曾向 Megaspeed 等预付约42亿美元租赁算力。",
+      "significance": "事件涉及阿里云海外算力获取及科技股风险预期；列入清单是已采取的限制，资金安排来自匿名消息，涉嫌违规并非已被证实。",
+      "source": "路透社",
+      "published_at": "2026-11-24 20:00（北京时间）",
+      "url": "https://www.reuters.com/business/retail-consumer/what-we-know-about-megaspeed-nvidia-customer-blacklisted-by-us-2026-11-24/"
     }
   ]
 }
