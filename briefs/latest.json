@@ -1,16 +1,26 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "status": "news",
   "articles": [
     {
       "importance": "重大",
-      "category": "其他市场要闻·贸易政策与市场风险",
-      "title": "美国就产能调查提出对华关税方案，尚未生效",
-      "summary": "路透称，美国贸易代表办公室就产能调查对14个贸易伙伴提出关税方案；对中国拟议税率上限为20%，拟叠加于特朗普第一任期约25%的关税之上。中美贸易休战若破裂，相关税率可能升至40%；拟议关税不会早于2027年1月25日公众听证会后生效，部分商品不适用。中国驻美使馆否认所谓产能过剩指控。",
-      "significance": "关税方案影响中国出口企业、产业链及市场风险偏好；路透称新贸易壁垒前景与科技股抛售共同拖累美股。当前只是提议，20%不应表述为已新增生效税率，40%取决于休战状态。",
+      "category": "其他市场要闻·债券与信用风险",
+      "title": "彭博：万科拟再次寻求12亿元债券展期三年",
+      "summary": "据彭博援引知情人士，万科拟将12月15日到期债券的12亿元剩余本金再延期三年，拟按期支付3%票息；与债权人讨论的提前还本比例均低于上次展期40%的一半。条款尚在磋商，可能调整；万科未立即置评。原文受限，依据彭博授权转载。",
+      "significance": "万科是地产与信用市场的重要观察对象，消息显示其债务压力持续；拟议展期并不等于已获债权人同意或已经违约。",
+      "source": "彭博社（The Edge Singapore 授权转载）",
+      "published_at": "2026-11-26 11:38（北京时间，原文索引时间）；12:10（转载）",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-26/vanke-seeks-bond-delay-again-as-chinese-builder-distress-deepens"
+    },
+    {
+      "importance": "重要",
+      "category": "其他市场要闻·科技融资与外资观点",
+      "title": "惠誉预计美国芯片限制将放缓亚洲数据中心投资",
+      "summary": "路透报道，惠誉认为，美国11月19日生效的芯片许可要求将使亚太数据中心投资更审慎：依赖中国客户及高端芯片的项目可能因供应或客户资格不确定而延期，融资审查也会趋严。",
+      "significance": "这是评级机构对未来投资和信用风险的判断，不代表具体项目已违约；对中国科技企业海外算力及相关融资具有直接关联。",
       "source": "路透社",
-      "published_at": "2026-11-25 21:15（北京时间，报道发布时间）",
-      "url": "https://www.reuters.com/world/china/us-proposes-new-tariffs-14-trading-partners-fight-excess-factory-capacity-2026-11-25/"
+      "published_at": "2026-11-26 19:18（北京时间）",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
     }
   ]
 }
