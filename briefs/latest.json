@@ -1,26 +1,16 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "status": "news",
   "articles": [
     {
       "importance": "重大",
-      "category": "其他市场要闻·债券与信用风险",
-      "title": "彭博：万科拟再次寻求12亿元债券展期三年",
-      "summary": "据彭博援引知情人士，万科拟将12月15日到期债券的12亿元剩余本金再延期三年，拟按期支付3%票息；与债权人讨论的提前还本比例均低于上次展期40%的一半。条款尚在磋商，可能调整；万科未立即置评。原文受限，依据彭博授权转载。",
-      "significance": "万科是地产与信用市场的重要观察对象，消息显示其债务压力持续；拟议展期并不等于已获债权人同意或已经违约。",
-      "source": "彭博社（The Edge Singapore 授权转载）",
-      "published_at": "2026-11-26 11:38（北京时间，原文索引时间）；12:10（转载）",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-26/vanke-seeks-bond-delay-again-as-chinese-builder-distress-deepens"
-    },
-    {
-      "importance": "重要",
-      "category": "其他市场要闻·科技融资与外资观点",
-      "title": "惠誉预计美国芯片限制将放缓亚洲数据中心投资",
-      "summary": "路透报道，惠誉认为，美国11月19日生效的芯片许可要求将使亚太数据中心投资更审慎：依赖中国客户及高端芯片的项目可能因供应或客户资格不确定而延期，融资审查也会趋严。",
-      "significance": "这是评级机构对未来投资和信用风险的判断，不代表具体项目已违约；对中国科技企业海外算力及相关融资具有直接关联。",
+      "category": "监管政策·国家队与长期资金",
+      "title": "国务院要求发挥国家队稳市作用，中央汇金优化类平准基金职能",
+      "summary": "路透援引新华社称，11月27日国务院常务会议要求发挥国家队稳市作用，进一步优化中央汇金类平准基金职能，推动保险资金、企业年金及社保基金等中长期资金入市。消息公布后上证综指收涨3.7%、沪深300涨4.2%、科创50涨15%，港股恒生科技指数涨逾6%。会议表态未披露新增投入金额或实施时间。",
+      "significance": "稳市和长期资金入市获国务院层面强调，但表态不等于中央汇金已按新方案实际买入。外资观点：美国银行认为表态有助重建信心；盛宝银行认为，政策反弹仍需基本面恢复支撑才能确认持续见底。",
       "source": "路透社",
-      "published_at": "2026-11-26 19:18（北京时间）",
-      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/"
+      "published_at": "2026-11-27 14:32（北京时间，国务院报道）；18:17（收市报道更新）",
+      "url": "https://www.reuters.com/world/china-strengthen-defense-against-imported-risks-capital-markets-2026-11-27/"
     }
   ]
 }
